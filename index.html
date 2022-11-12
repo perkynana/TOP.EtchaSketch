@@ -6,10 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="header">
+        <h6>Select the size</h6>
+        <button class="btn btn-primary" id="selectSize">Select Size</button>
+    </div>
+    <p id="message"></p>
+    <p id="draw"></p>
+    <div class="frame">
 
+    </div>
+    <div class="footer">
+        <button class="btn btn-dark" onclick="setColor('black')">Black</button>
+        <button class="btn btn-warning" onclick="setColor('random')">Random</button>
+        <button class="btn btn-danger" onclick="reset()">Reset</button>
+    </div>
 </body>
+<script src="script.js">
+</script>
 
 </html>
